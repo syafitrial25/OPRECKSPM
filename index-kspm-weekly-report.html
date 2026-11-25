@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Kelompok Studi Pasar Modal FEB UPN Veteran Jakarta. A Space to Learn. A Community to Grow.">
+<meta name="description" content="Kelompok Studi Pasar Modal FEB UPN Veteran Jakarta. Beyond The Market. Building The Future.">
 <title>KSPM FEB UPNVJ | Capital Market Community</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,7 +173,7 @@ img {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 32px;
   list-style: none;
 }
 
@@ -256,7 +256,7 @@ img {
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(44px, 5.8vw, 74px);
+  font-size: clamp(46px, 5.8vw, 76px);
   line-height: 1.08;
   margin-bottom: 25px;
 }
@@ -431,7 +431,7 @@ img {
 }
 
 /* =========================
-   VISION & MISSION
+   FOUNDATION / VALUES
 ========================= */
 .vision {
   background: var(--cream);
@@ -439,7 +439,7 @@ img {
 
 .vision-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   margin-top: 45px;
 }
@@ -461,7 +461,7 @@ img {
 .vision-card h3 {
   font-size: 22px;
   color: var(--dark-red);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .vision-card p {
@@ -505,6 +505,8 @@ img {
   background: rgba(255,255,255,.06);
   transition: .35s;
   min-height: 270px;
+  display: flex;
+  flex-direction: column;
 }
 
 .program-card:hover {
@@ -513,12 +515,13 @@ img {
   border-color: var(--cream);
 }
 
-.program-number {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
+.program-tag {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
   color: var(--cream);
-  opacity: 0.75;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
 }
 
 .program-card h3 {
@@ -537,11 +540,11 @@ img {
 /* =========================
    DEPARTMENTS
 ========================= */
-.departments {
+.events {
   background: var(--light-grey);
 }
 
-.departments-heading {
+.events-heading {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -549,13 +552,13 @@ img {
   margin-bottom: 45px;
 }
 
-.department-grid {
+.event-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.department-card {
+.event-card {
   background: white;
   overflow: hidden;
   transition: .3s;
@@ -564,53 +567,46 @@ img {
   flex-direction: column;
 }
 
-.department-card:hover {
+.event-card:hover {
   transform: translateY(-8px);
 }
 
-.department-banner {
-  height: 170px;
+.event-image {
+  height: 190px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--red), var(--dark-red));
   color: white;
   font-family: 'Playfair Display', serif;
-  font-size: 23px;
+  font-size: 24px;
   text-align: center;
-  padding: 22px;
-}
-
-.department-body {
   padding: 25px;
-  flex-grow: 1;
 }
 
-.department-tag {
+.event-body {
+  padding: 25px;
+}
+
+.event-tag {
   color: var(--bright-red);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.department-body h3 {
+.event-body h3 {
   color: var(--dark-red);
-  margin: 12px 0;
+  margin-top: 10px;
   font-size: 21px;
 }
 
-.department-body p {
-  font-size: 13px;
-  color: #666;
-  line-height: 1.8;
-}
-
 /* =========================
-   WEEKLY REPORT (CTA STYLE)
+   CALL TO ACTION
 ========================= */
 .cta {
-  padding: 100px 0;
+  padding: 95px 0;
   background: var(--red);
   color: white;
   text-align: center;
@@ -628,10 +624,9 @@ img {
 
 .cta p {
   color: rgba(255,255,255,.85);
-  margin: 0 auto 32px;
-  max-width: 620px;
+  margin: 0 auto 30px;
+  max-width: 600px;
   line-height: 1.8;
-  font-size: 15px;
 }
 
 /* =========================
@@ -643,19 +638,21 @@ img {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 50px;
   margin-top: 40px;
+  align-items: start;
 }
 
 .contact-info {
   display: grid;
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
 }
 
 .contact-item {
   display: flex;
-  gap: 18px;
+  gap: 16px;
   align-items: flex-start;
 }
 
@@ -666,24 +663,22 @@ img {
   color: white;
   display: grid;
   place-items: center;
-  font-size: 20px;
+  font-size: 18px;
   flex-shrink: 0;
 }
 
 .contact-item h4 {
   color: var(--dark-red);
   margin-bottom: 5px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 15px;
 }
 
-.contact-item p,
-.contact-item a {
-  font-size: 14px;
+.contact-item a,
+.contact-item p {
+  font-size: 13px;
   color: #555;
   line-height: 1.8;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .contact-item a:hover {
@@ -699,7 +694,7 @@ img {
 
 .contact-panel h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 15px;
 }
 
@@ -751,6 +746,7 @@ footer {
   font-size: 11px;
   color: rgba(255,255,255,.6);
   margin-top: 5px;
+  letter-spacing: 1px;
 }
 
 .footer-social {
@@ -783,16 +779,21 @@ footer {
 ========================= */
 @media(max-width: 900px) {
   .nav-links {
-    gap: 16px;
+    gap: 17px;
   }
 
   .hero-content,
-  .about-grid {
+  .about-grid,
+  .contact-grid {
     gap: 35px;
   }
 
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
   .program-grid,
-  .department-grid {
+  .event-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -825,7 +826,7 @@ footer {
     padding: 25px 5%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 22px;
+    gap: 25px;
   }
 
   .nav-links.show {
@@ -840,7 +841,7 @@ footer {
   .hero-content,
   .about-grid,
   .vision-grid,
-  .contact-grid {
+  .contact-info {
     grid-template-columns: 1fr;
   }
 
@@ -875,11 +876,11 @@ footer {
   }
 
   .program-grid,
-  .department-grid {
+  .event-grid {
     grid-template-columns: 1fr;
   }
 
-  .departments-heading {
+  .events-heading {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -903,14 +904,14 @@ footer {
   <div class="container nav-content">
 
     <a href="#home" class="brand">
-      <img src="./logo-kspm.png" alt="Logo KSPM FEB UPNVJ">
+      <img src="assets/logo-kspm.png" alt="KSPM Logo">
       <div class="brand-text">
         <strong>KSPM FEB UPNVJ</strong>
         <span>CAPITAL MARKET COMMUNITY</span>
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
       ☰
     </button>
 
@@ -919,7 +920,6 @@ footer {
       <li><a href="#about">About</a></li>
       <li><a href="#programs">Programs</a></li>
       <li><a href="#departments">Departments</a></li>
-      <li><a href="#weekly-report">Weekly Report</a></li>
       <li><a href="#contact" class="nav-cta">Contact Us ↗</a></li>
     </ul>
 
@@ -933,18 +933,17 @@ footer {
   <div class="container hero-content">
 
     <div class="reveal">
-      <span class="hero-label">WELCOME TO KSPM FEB UPNVJ</span>
+      <span class="hero-label">FEB UPN “VETERAN” JAKARTA</span>
 
       <h1>
-        A Space to Learn.
-        <span>A Community to Grow.</span>
+        Beyond The Market.
+        <span>Building The Future.</span>
       </h1>
 
       <p class="hero-description">
-        Kelompok Studi Pasar Modal FEB UPN "Veteran" Jakarta is a
-        student organization dedicated to expanding capital market
-        knowledge, encouraging collaboration, and developing students'
-        potential through meaningful experiences.
+        More than a student organization, KSPM FEB UPNVJ is a community
+        to explore the capital market, develop financial knowledge,
+        and create opportunities for future leaders.
       </p>
 
       <div class="hero-buttons">
@@ -952,8 +951,9 @@ footer {
           Discover KSPM ↗
         </a>
 
-        <a href="#programs" class="btn btn-primary" style="border-color:white">
-          Explore Programs →
+        <a href="#programs" class="btn btn-primary"
+           style="border-color:white">
+          Explore Programs
         </a>
       </div>
     </div>
@@ -961,7 +961,7 @@ footer {
     <div class="hero-visual reveal">
       <div class="hero-circle"></div>
       <div class="hero-logo">
-        <img src="./logo-kspm.png" alt="KSPM Logo">
+        <img src="assets/logo-kspm.png" alt="KSPM FEB UPNVJ">
       </div>
     </div>
 
@@ -975,75 +975,97 @@ footer {
   </div>
 </section>
 
-<!-- ABOUT US -->
+<!-- 01 / ABOUT US -->
 <section class="about section-padding" id="about">
   <div class="container about-grid">
 
     <div class="reveal">
-      <p class="eyebrow">WHO WE ARE</p>
+      <p class="eyebrow">01 / ABOUT US</p>
 
       <h2 class="section-title">
-        About Our Community.
+        A Space to Learn. A Community to Grow.
       </h2>
 
       <p class="section-description">
-        KSPM FEB UPNVJ is a student community that focuses on capital
-        market education and financial literacy. We provide a space
-        for students to learn, explore, and develop their understanding
-        of the investment world.
+        Kelompok Studi Pasar Modal FEB UPN “Veteran” Jakarta is a student
+        organization dedicated to expanding capital market knowledge,
+        encouraging collaboration, and developing students’ potential
+        through meaningful experiences.
       </p>
 
       <p class="section-description">
-        Through education, collaboration, and various activities,
-        we aim to create a generation that is knowledgeable,
-        responsible, and ready to face the future of finance.
+        We believe knowledge creates opportunities. Through education,
+        experience, and collaboration, every member can discover their
+        potential and take part in the dynamic world of capital markets.
       </p>
 
-      <a href="#vision" class="btn btn-light">
-        OUR VISION & MISSION →
+      <a href="#foundation" class="btn btn-light">
+        OUR FOUNDATION →
       </a>
     </div>
 
     <div class="about-visual reveal">
       <div class="about-logo">
-        <img src="./logo-kspm.png" alt="KSPM Logo">
+        <img src="assets/logo-kspm.png" alt="KSPM Logo">
       </div>
       <div class="about-caption">
-        LEARN · CONNECT · GROW
+        KSPM. · LEARN · CONNECT · GROW
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- VISION & MISSION -->
-<section class="vision section-padding" id="vision">
+<!-- 02 / OUR FOUNDATION -->
+<section class="vision section-padding" id="foundation">
   <div class="container">
 
     <div class="reveal">
-      <p class="eyebrow" style="color:#780000">OUR FOUNDATION</p>
+      <p class="eyebrow" style="color:#780000">02 / OUR FOUNDATION</p>
       <h2 class="section-title" style="color:#3b0000">
-        Our Vision & Mission
+        The Values Behind Everything We Do.
       </h2>
+      <p class="section-description" style="color:#555">
+        Four pillars that shape our culture, strengthen our community,
+        and guide every step of our journey.
+      </p>
     </div>
 
     <div class="vision-grid">
 
       <div class="vision-card reveal">
-        <div class="number">01</div>
-        <h3>Our Vision</h3>
+        <div class="number">01 —</div>
+        <h3>Wellbeing</h3>
         <p>
-          To become a community that inspires financial literacy
-          and capital market excellence.
+          Creating a supportive environment where every member feels
+          valued, connected, and empowered to grow.
         </p>
       </div>
 
       <div class="vision-card reveal">
-        <div class="number">02</div>
-        <h3>Our Mission</h3>
+        <div class="number">02 —</div>
+        <h3>Education</h3>
         <p>
-          To educate, connect, and empower students through
-          meaningful learning experiences.
+          Building knowledge, developing skills, and encouraging
+          continuous learning.
+        </p>
+      </div>
+
+      <div class="vision-card reveal">
+        <div class="number">03 —</div>
+        <h3>Collaboration</h3>
+        <p>
+          Growing together through teamwork, communication, and
+          shared experiences.
+        </p>
+      </div>
+
+      <div class="vision-card reveal">
+        <div class="number">04 —</div>
+        <h3>Competition</h3>
+        <p>
+          Challenging ourselves to achieve excellence and bring our
+          capabilities further.
         </p>
       </div>
 
@@ -1051,76 +1073,76 @@ footer {
   </div>
 </section>
 
-<!-- OUR PROGRAMS -->
+<!-- 03 / OUR PROGRAMS -->
 <section class="programs section-padding" id="programs">
   <div class="container">
 
     <div class="reveal">
-      <p class="eyebrow">WHAT WE DO</p>
+      <p class="eyebrow">03 / OUR PROGRAMS</p>
 
       <h2 class="section-title">
-        Our Programs.
+        Turning Knowledge Into Experience.
       </h2>
 
       <p class="section-description">
-        A variety of activities designed to help students understand
-        capital markets, develop their skills, and build connections.
+        Explore initiatives and experiences designed to develop
+        our members’ potential.
       </p>
     </div>
 
     <div class="program-grid">
 
       <article class="program-card reveal">
-        <div class="program-number">01</div>
-        <h3>Capital Market Education</h3>
+        <div class="program-tag">01 / CAREER ↗</div>
+        <h3>Finance Pathway</h3>
         <p>
-          Learning sessions and educational activities to introduce
-          students to investment and capital market fundamentals.
+          Discover career opportunities and gain insights from
+          professionals in the finance industry.
         </p>
       </article>
 
       <article class="program-card reveal">
-        <div class="program-number">02</div>
-        <h3>Investment Discussion</h3>
+        <div class="program-tag">02 / EXPERIENCE ↗</div>
+        <h3>Visit Emiten</h3>
         <p>
-          A collaborative space to discuss financial markets,
-          investment insights, and current economic developments.
+          Explore the business environment and understand how
+          listed companies operate.
         </p>
       </article>
 
       <article class="program-card reveal">
-        <div class="program-number">03</div>
-        <h3>Workshops & Training</h3>
+        <div class="program-tag">03 / NETWORKING ↗</div>
+        <h3>Studi Banding</h3>
         <p>
-          Opportunities to improve analytical, communication,
-          and professional skills.
+          Exchange ideas and organizational insights with other
+          student communities.
         </p>
       </article>
 
       <article class="program-card reveal">
-        <div class="program-number">04</div>
-        <h3>Company Visit</h3>
+        <div class="program-tag">04 / EDUCATION ↗</div>
+        <h3>SPM+</h3>
         <p>
-          Exploring the professional environment and gaining
-          insights from industry practitioners.
+          Develop practical capital market knowledge through
+          research, modelling, and valuation.
         </p>
       </article>
 
       <article class="program-card reveal">
-        <div class="program-number">05</div>
-        <h3>Community Development</h3>
+        <div class="program-tag">05 / COMPETITION ↗</div>
+        <h3>Vetra Stock Competition</h3>
         <p>
-          Building teamwork, leadership, and meaningful connections
-          among members.
+          Challenge analytical and trading skills in a capital
+          market competition.
         </p>
       </article>
 
       <article class="program-card reveal">
-        <div class="program-number">06</div>
-        <h3>Financial Literacy</h3>
+        <div class="program-tag">06 / INSIGHTS ↗</div>
+        <h3>Grand Investment Outlook</h3>
         <p>
-          Encouraging responsible financial habits and better
-          understanding of personal finance.
+          Explore economic developments and investment perspectives
+          with industry practitioners.
         </p>
       </article>
 
@@ -1128,106 +1150,82 @@ footer {
   </div>
 </section>
 
-<!-- DEPARTMENTS -->
-<section class="departments section-padding" id="departments">
+<!-- 04 / OUR ORGANIZATION (DEPARTMENTS) -->
+<section class="events section-padding" id="departments">
   <div class="container">
 
-    <div class="departments-heading reveal">
+    <div class="events-heading reveal">
       <div>
-        <p class="eyebrow" style="color:#780000">OUR ORGANIZATION</p>
+        <p class="eyebrow" style="color:#780000">04 / OUR ORGANIZATION</p>
         <h2 class="section-title" style="color:#3b0000">
-          Meet Our Departments.
+          Different Roles. One Shared Purpose.
         </h2>
         <p class="section-description" style="color:#555">
-          Every department plays an important role in supporting
-          our community and creating meaningful experiences.
+          Meet the departments that work together to make every
+          KSPM initiative possible.
         </p>
       </div>
     </div>
 
-    <div class="department-grid">
+    <div class="event-grid">
 
-      <article class="department-card reveal">
-        <div class="department-banner">
-          EDUCATION
+      <article class="event-card reveal">
+        <div class="event-image">
+          FINANCE &<br>ADMINISTRATION
         </div>
-        <div class="department-body">
-          <span class="department-tag">DEPARTMENT 01</span>
-          <h3>Education</h3>
-          <p>
-            Focuses on developing knowledge and understanding
-            of capital markets and investment.
-          </p>
+        <div class="event-body">
+          <span class="event-tag">01 / FnA ↗</span>
+          <h3>Finance & Administration</h3>
         </div>
       </article>
 
-      <article class="department-card reveal">
-        <div class="department-banner">
-          RESEARCH &<br>DEVELOPMENT
+      <article class="event-card reveal">
+        <div class="event-image">
+          HUMAN<br>CAPITAL
         </div>
-        <div class="department-body">
-          <span class="department-tag">DEPARTMENT 02</span>
-          <h3>Research & Development</h3>
-          <p>
-            Supports research, analysis, and the development
-            of financial market insights.
-          </p>
+        <div class="event-body">
+          <span class="event-tag">02 / HC ↗</span>
+          <h3>Human Capital</h3>
         </div>
       </article>
 
-      <article class="department-card reveal">
-        <div class="department-banner">
+      <article class="event-card reveal">
+        <div class="event-image">
           PUBLIC<br>RELATIONS
         </div>
-        <div class="department-body">
-          <span class="department-tag">DEPARTMENT 03</span>
+        <div class="event-body">
+          <span class="event-tag">03 / PR ↗</span>
           <h3>Public Relations</h3>
-          <p>
-            Builds relationships and maintains communication
-            with internal and external parties.
-          </p>
         </div>
       </article>
 
-      <article class="department-card reveal">
-        <div class="department-banner">
-          MEDIA &<br>COMMUNICATION
+      <article class="event-card reveal">
+        <div class="event-image">
+          OPERATION &<br>EDUCATION
         </div>
-        <div class="department-body">
-          <span class="department-tag">DEPARTMENT 04</span>
-          <h3>Media & Communication</h3>
-          <p>
-            Creates information, publications, and creative
-            content for the community.
-          </p>
+        <div class="event-body">
+          <span class="event-tag">04 / O&amp;E ↗</span>
+          <h3>Operation & Education</h3>
         </div>
       </article>
 
-      <article class="department-card reveal">
-        <div class="department-banner">
-          HUMAN<br>RESOURCES
+      <article class="event-card reveal">
+        <div class="event-image">
+          RESEARCH &<br>DEVELOPMENT
         </div>
-        <div class="department-body">
-          <span class="department-tag">DEPARTMENT 05</span>
-          <h3>Human Resources</h3>
-          <p>
-            Supports member development, teamwork,
-            and organizational growth.
-          </p>
+        <div class="event-body">
+          <span class="event-tag">05 / R&amp;D ↗</span>
+          <h3>Research & Development</h3>
         </div>
       </article>
 
-      <article class="department-card reveal">
-        <div class="department-banner">
-          EVENT &<br>PARTNERSHIP
+      <article class="event-card reveal">
+        <div class="event-image">
+          CREATIVE<br>MARKETING
         </div>
-        <div class="department-body">
-          <span class="department-tag">DEPARTMENT 06</span>
-          <h3>Event & Partnership</h3>
-          <p>
-            Coordinates activities and supports collaborations
-            with partners and stakeholders.
-          </p>
+        <div class="event-body">
+          <span class="event-tag">06 / CM ↗</span>
+          <h3>Creative Marketing</h3>
         </div>
       </article>
 
@@ -1235,44 +1233,43 @@ footer {
   </div>
 </section>
 
-<!-- WEEKLY REPORT -->
-<section class="cta" id="weekly-report">
+<!-- 05 / BE PART OF US (CTA) -->
+<section class="cta">
   <div class="container reveal">
 
-    <p class="eyebrow">STAY UPDATED</p>
+    <p class="eyebrow">05 / BE PART OF US</p>
 
     <h2>
-      Weekly Report.
+      Your Journey Starts Here.
     </h2>
 
     <p>
-      Stay informed with our weekly reports. Explore updates,
-      documentation, and various activities from KSPM FEB UPNVJ
-      through our report archive.
+      Be part of a community that learns, connects, and grows
+      together in the world of capital markets.
     </p>
 
-    <a href="https://drive.google.com/drive/folders/1Lua2O4Lq48EbN9gtoRLa_PAhhC3CAfH4?usp=sharing"
-       target="_blank" rel="noopener noreferrer"
+    <a href="https://www.instagram.com/kspm.upnvj/"
+       target="_blank" rel="noopener"
        class="btn btn-light">
-      Explore Weekly Reports ↗
+      Follow Our Journey ↗
     </a>
 
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- 06 / GET IN TOUCH (CONTACT) -->
 <section class="contact section-padding" id="contact">
   <div class="container">
 
-    <p class="eyebrow" style="color:#780000">GET IN TOUCH</p>
+    <p class="eyebrow" style="color:#780000">06 / GET IN TOUCH</p>
 
     <h2 class="section-title" style="color:#3b0000">
-      Let's Connect.
+      Let’s Connect.
     </h2>
 
     <p class="section-description" style="color:#555">
-      Have questions, ideas, or opportunities to collaborate?
-      We would love to hear from you.
+      Have questions, partnership opportunities, or want to know
+      more about KSPM? We would love to hear from you.
     </p>
 
     <div class="contact-grid">
@@ -1280,29 +1277,41 @@ footer {
       <div class="contact-info reveal">
 
         <div class="contact-item">
-          <div class="contact-icon">🏛</div>
-          <div>
-            <h4>Organization</h4>
-            <p>KSPM FEB UPN "Veteran" Jakarta</p>
-          </div>
-        </div>
-
-        <div class="contact-item">
           <div class="contact-icon">◎</div>
           <div>
             <h4>Instagram</h4>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-              Visit Instagram ↗
+            <a href="https://www.instagram.com/kspm.upnvj/" target="_blank" rel="noopener">
+              @kspm.upnvj ↗
             </a>
           </div>
         </div>
 
         <div class="contact-item">
-          <div class="contact-icon">in</div>
+          <div class="contact-icon">💬</div>
           <div>
-            <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-              Visit LinkedIn ↗
+            <h4>WhatsApp Community</h4>
+            <a href="#" target="_blank" rel="noopener">
+              Update link ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:pr.kspmupnvj@gmail.com">
+              Update email ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🤝</div>
+          <div>
+            <h4>Partnership</h4>
+            <a href="#contact">
+              Contact us ↗
             </a>
           </div>
         </div>
@@ -1310,15 +1319,18 @@ footer {
       </div>
 
       <div class="contact-panel reveal">
-        <h3>Be Part of Our Community.</h3>
+        <h3>LEARN · CONNECT · GROW</h3>
 
         <p>
-          Learn about the capital market, connect with new people,
-          and grow together with KSPM FEB UPNVJ.
+          Explore the capital market, develop financial knowledge,
+          and create opportunities for future leaders together with
+          KSPM FEB UPN “Veteran” Jakarta.
         </p>
 
-        <a href="#about" class="btn btn-light">
-          Get to Know Us ↗
+        <a href="https://www.instagram.com/kspm.upnvj/"
+           target="_blank" rel="noopener"
+           class="btn btn-light">
+          Follow Our Journey ↗
         </a>
       </div>
 
@@ -1333,22 +1345,22 @@ footer {
   <div class="container footer-content">
 
     <div class="footer-brand">
-      <img src="./logo-kspm.png" alt="KSPM Logo">
+      <img src="assets/logo-kspm.png" alt="KSPM Logo">
 
       <div>
         <strong>KSPM FEB UPNVJ</strong>
-        <p>CAPITAL MARKET COMMUNITY</p>
+        <p>LEARN · CONNECT · GROW</p>
       </div>
     </div>
 
     <div class="footer-social">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+      <a href="https://www.instagram.com/kspm.upnvj/"
+         target="_blank" rel="noopener">@KSPM.UPNVJ ↗</a>
       <a href="#home">BACK TO TOP ↑</a>
     </div>
 
     <p class="footer-copy">
-      © <span id="year">2026</span> KSPM FEB UPNVJ · CAPITAL MARKET COMMUNITY
+      © 2026 KSPM FEB UPN “Veteran” Jakarta
     </p>
 
   </div>
@@ -1386,10 +1398,6 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(element => {
   observer.observe(element);
 });
-
-/* AUTOMATIC COPYRIGHT YEAR */
-document.getElementById('year').textContent =
-  new Date().getFullYear();
 </script>
 
 </body>
