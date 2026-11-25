@@ -1,45 +1,223 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-padding-top:env(safe-area-inset-top, 0)">
+<html lang="en" style="scroll-behavior:smooth; scroll-padding-top:84px">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>KSPM FEB UPNVJ | Links</title>
+<title>KSPM FEB UPNVJ | Kelompok Studi Pasar Modal</title>
+<meta name="description" content="Kelompok Studi Pasar Modal FEB UPN “Veteran” Jakarta: learn, compete, and grow in the capital market.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>:root {box-sizing:border-box;padding-top:env(safe-area-inset-top, 0);padding-bottom:env(safe-area-inset-bottom, 0)}
 :root:not([data-theme="light"]) {color-scheme:dark}
-
-:root[data-theme="dark"] {}
-a.btn:hover {background:rgba(255, 255, 255, 0.16);transform:translatey(-2px)}
-a.btn:active {transform:scale(0.98)}
-a.main:hover {}</style>
+nav a:hover {}
+.card:hover {transform:translatey(-4px);background:rgba(255, 255, 255, 0.12)}
+.btn:active {transform:scale(0.97)}
+.btn.main:hover {}
+.btn.ghost:hover {background:rgba(255, 241, 213, 0.12)}
+.join .btn.main:hover {}
+@media (max-width: 760px) {
+    .burger {
+        display: block
+        }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0
+        }
+    nav ul.open {
+        display: flex
+        }
+    nav li a {
+        display: block;
+        padding: 14px 20px
+        }
+    section {
+        padding: 56px 0
+        }
+    .hero {
+        padding: 64px 0 56px
+        }
+    }
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto
+        }
+    .js .reveal {
+        transition: none
+        }
+    }</style>
 </head>
-<body style='background-attachment:fixed; display:flex; font-family:"Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; justify-content:center; margin:0; min-height:100vh'>
-<main class="wrap" style="max-width:460px; padding:40px 20px 32px; text-align:center; width:100%" align="center" width="100%">
-<div class="logo" aria-label="KSPM logo" style="align-items:center; border-radius:50%; display:flex; font-size:24px; font-weight:600; height:92px; justify-content:center; letter-spacing:1px; margin:0 auto 14px; width:92px" height="92" width="92">KSPM</div>
-<h1 style="font-size:20px; font-weight:600; margin:0 0 4px">Kelompok Studi Pasar Modal</h1>
-<p class="tag" style="font-size:13px; margin:0 0 6px">FEB UPNVJ</p>
-<p class="sub" style="font-size:12px; margin:0 0 26px">Learn, grow, and invest together</p>
+<body style='font-family:"Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.65; margin:0'>
 
-<div class="sec" style="font-size:11px; letter-spacing:1.5px; margin:22px 0 10px; text-align:left; text-transform:uppercase" align="left">Active events</div>
-<a class="btn main" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Register for our latest event<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left; opacity:0.75" align="left">Registration link for the ongoing event</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
+<header style="background:rgba(59, 0, 0, 0.94); position:sticky; top:env(safe-area-inset-top, 0); z-index:20">
+  <div class="wrap nav" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%; align-items:center; display:flex; height:64px; justify-content:space-between" width="100%" height="64">
+    <a class="brand" href="#top" style="color:inherit; align-items:center; display:flex; font-size:15px; font-weight:600; gap:10px; text-decoration:none"><span class="logo" style="align-items:center; border-radius:50%; display:flex; font-size:12px; font-weight:700; height:38px; justify-content:center; width:38px" height="38" width="38">kspm</span><span>KSPM FEB UPNVJ</span></a>
+    <nav aria-label="Main">
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" style="background:none; border-radius:8px; cursor:pointer; display:none; font:inherit; padding:6px 10px">Menu</button>
+      <ul id="menu" style="display:flex; gap:22px; list-style:none; margin:0; padding:0">
+        <li><a href="#about" style="color:inherit; font-size:14px; text-decoration:none; transition:color 0.15s">About</a></li>
+        <li><a href="#programs" style="color:inherit; font-size:14px; text-decoration:none; transition:color 0.15s">Programs</a></li>
+        <li><a href="#departments" style="color:inherit; font-size:14px; text-decoration:none; transition:color 0.15s">Departments</a></li>
+        <li><a href="#join" style="color:inherit; font-size:14px; text-decoration:none; transition:color 0.15s">Join us</a></li>
+        <li><a href="#contact" style="color:inherit; font-size:14px; text-decoration:none; transition:color 0.15s">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="sec" style="font-size:11px; letter-spacing:1.5px; margin:22px 0 10px; text-align:left; text-transform:uppercase" align="left">KSPM programs</div>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Finance Pathway<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Career insights from finance practitioners</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">SPM+ (Sekolah Pasar Modal)<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Program info and registration</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Vetra Stock Competition<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Trading and equity research competition</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Grand Investment Outlook<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Geopolitics and investment outlook seminar</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
+<main id="top">
 
-<div class="sec" style="font-size:11px; letter-spacing:1.5px; margin:22px 0 10px; text-align:left; text-transform:uppercase" align="left">Featured content</div>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Press release<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Highlights of KSPM events and achievements</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Weekly market news<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Summary of capital market news</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
+<!-- ===== HERO ===== -->
+<section class="hero" style="padding:96px 0 80px">
+  <div class="wrap" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%" width="100%">
+    <p class="eyebrow" style="font-size:17px; letter-spacing:2px; margin:0 0 28px; text-transform:uppercase; max-width:560px">FEB UPN “Veteran” Jakarta</p>
+    <h1 style="font-size:clamp(32px, 7vw, 56px); font-weight:700; line-height:1.12; margin:0 0 16px">Learn, compete, and <span>grow</span> in the capital market.</h1>
+    <p style="font-size:17px; margin:0 0 28px; max-width:560px">Kelompok Studi Pasar Modal is a student community that helps members build capital market knowledge, skills, and a network they can grow with.</p>
+    <div class="cta" style="display:flex; flex-wrap:wrap; gap:12px">
+      <a class="btn main" href="#programs" style="color:inherit; border-radius:99px; display:inline-block; font-size:14px; font-weight:500; padding:12px 24px; text-decoration:none; transition:transform 0.15s, background 0.15s">Explore programs</a>
+      <a class="btn ghost" href="#join" style="color:inherit; border-radius:99px; display:inline-block; font-size:14px; font-weight:500; padding:12px 24px; text-decoration:none; transition:transform 0.15s, background 0.15s">Join KSPM</a>
+    </div>
+  </div>
+</section>
 
-<div class="sec" style="font-size:11px; letter-spacing:1.5px; margin:22px 0 10px; text-align:left; text-transform:uppercase" align="left">Contact us</div>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">WhatsApp Community<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Join for the latest updates</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
-<a class="btn" href="#" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Email<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Partnerships and questions</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
-<a class="btn" href="https://www.instagram.com/kspm.upnvj/" style="align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid rgba(227, 232, 235, 0.25); border-radius:14px; display:flex; font-size:14px; font-weight:500; gap:12px; justify-content:space-between; margin:0 0 10px; padding:14px 18px; text-decoration:none; transition:transform 0.15s, background 0.15s; width:100%" width="100%"><span class="t" style="text-align:left" align="left">Instagram @kspm.upnvj<small style="display:block; font-size:11px; font-weight:400; margin-top:2px; text-align:left" align="left">Follow our daily content</small></span><span class="arrow" style="font-size:16px; opacity:0.8">→</span></a>
+<!-- ===== ABOUT: 4 pillars ===== -->
+<section id="about" style="padding:72px 0">
+  <div class="wrap" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%" width="100%">
+    <p class="eyebrow" style="font-size:12px; letter-spacing:2px; margin:0 0 8px; text-transform:uppercase">About us</p>
+    <h2 style="font-size:clamp(24px, 4vw, 34px); line-height:1.25; margin:0 0 12px">Four pillars that guide everything we do</h2>
+    <p class="lead" style="margin:0 0 32px; max-width:640px">From learning sessions to national competitions, every KSPM activity is built on these four pillars.</p>
+    <div class="grid" style="display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr))">
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Wellbeing</h3>
+<p style="font-size:14px; margin:0">A supportive environment where members feel valued, connected, and empowered to grow.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Education</h3>
+<p style="font-size:14px; margin:0">Interpersonal, soft, and technical skills developed through designated programs.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Collaboration</h3>
+<p style="font-size:14px; margin:0">Cross-departmental teamwork, communication, and shared responsibility.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Competition</h3>
+<p style="font-size:14px; margin:0">Skills and achievements built through structured training, mentorship, and competitions.</p>
+</div>
+    </div>
+  </div>
+</section>
 
-<p class="foot" style="font-size:11px; margin-top:28px">© KSPM FEB UPNVJ 10.0</p>
+<!-- ===== PROGRAMS (edit titles, tags and text here) ===== -->
+<section id="programs" class="alt" style="padding:72px 0">
+  <div class="wrap" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%" width="100%">
+    <p class="eyebrow" style="font-size:12px; letter-spacing:2px; margin:0 0 8px; text-transform:uppercase">Programs</p>
+    <h2 style="font-size:clamp(24px, 4vw, 34px); line-height:1.25; margin:0 0 12px">Where members learn by doing</h2>
+    <p class="lead" style="margin:0 0 32px; max-width:640px">Our work programs cover careers, company visits, knowledge exchange, education, and competitions.</p>
+    <div class="grid" style="display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr))">
+      <article class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s"><span class="tag" style="border-radius:99px; display:inline-block; font-size:11px; font-weight:500; margin-bottom:12px; padding:3px 10px">Online</span><h3 style="font-size:17px; margin:0 0 6px">Finance Pathway</h3>
+<p style="font-size:14px; margin:0">Career insights in the finance industry through discussions with practitioners and career preparation skills.</p></article>
+      <article class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s"><span class="tag" style="border-radius:99px; display:inline-block; font-size:11px; font-weight:500; margin-bottom:12px; padding:3px 10px">Offline</span><h3 style="font-size:17px; margin:0 0 6px">Visit Emiten</h3>
+<p style="font-size:14px; margin:0">A first-hand look at the operations, business strategy, and prospects of a listed company.</p></article>
+      <article class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s"><span class="tag" style="border-radius:99px; display:inline-block; font-size:11px; font-weight:500; margin-bottom:12px; padding:3px 10px">Offline</span><h3 style="font-size:17px; margin:0 0 6px">Studi Banding</h3>
+<p style="font-size:14px; margin:0">An exchange of knowledge and best practices with other organizations.</p></article>
+      <article class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s"><span class="tag" style="border-radius:99px; display:inline-block; font-size:11px; font-weight:500; margin-bottom:12px; padding:3px 10px">Hybrid</span><h3 style="font-size:17px; margin:0 0 6px">SPM+</h3>
+<p style="font-size:14px; margin:0">Sekolah Pasar Modal with hands-on investing practice, including equity research, financial modelling, and valuation.</p></article>
+      <article class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s"><span class="tag" style="border-radius:99px; display:inline-block; font-size:11px; font-weight:500; margin-bottom:12px; padding:3px 10px">Competition</span><h3 style="font-size:17px; margin:0 0 6px">Vetra Stock Competition</h3>
+<p style="font-size:14px; margin:0">A national capital market competition in trading and equity research.</p></article>
+      <article class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s"><span class="tag" style="border-radius:99px; display:inline-block; font-size:11px; font-weight:500; margin-bottom:12px; padding:3px 10px">Seminar</span><h3 style="font-size:17px; margin:0 0 6px">Grand Investment Outlook</h3>
+<p style="font-size:14px; margin:0">A seminar on geopolitics, industry trends, and investment prospects with market practitioners.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPARTMENTS (check the descriptions with your organization) ===== -->
+<section id="departments" style="padding:72px 0">
+  <div class="wrap" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%" width="100%">
+    <p class="eyebrow" style="font-size:12px; letter-spacing:2px; margin:0 0 8px; text-transform:uppercase">Departments</p>
+    <h2 style="font-size:clamp(24px, 4vw, 34px); line-height:1.25; margin:0 0 12px">Six departments, one team</h2>
+    <p class="lead" style="margin:0 0 32px; max-width:640px">Each department has its own role, and they work together to run KSPM.</p>
+    <div class="grid" style="display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr))">
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">FnA</h3>
+<p style="font-size:14px; margin:0">Finance and administration.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Human Capital</h3>
+<p style="font-size:14px; margin:0">Member development, wellbeing, and engagement.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Public Relations</h3>
+<p style="font-size:14px; margin:0">Partnerships and relations with other organizations.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">O&amp;E</h3>
+<p style="font-size:14px; margin:0">Program management and member education.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Research and Development</h3>
+<p style="font-size:14px; margin:0">Research, learning, and competition preparation.</p>
+</div>
+      <div class="card reveal" style="border-radius:16px; padding:22px; transition:transform 0.2s, background 0.2s">
+<h3 style="font-size:17px; margin:0 0 6px">Creative Marketing</h3>
+<p style="font-size:14px; margin:0">Design, content, and the visual identity of KSPM.</p>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== JOIN ===== -->
+<section id="join" class="join" style="padding:72px 0; text-align:center" align="center">
+  <div class="wrap" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%" width="100%">
+    <p class="eyebrow" style="font-size:12px; letter-spacing:2px; margin:0 auto 24px; text-transform:uppercase; max-width:520px">Open recruitment</p>
+    <h2 style="font-size:clamp(24px, 4vw, 34px); line-height:1.25; margin:0 0 12px">Ready to grow with us?</h2>
+    <p style="margin:0 auto 24px; max-width:520px">Follow our Instagram for recruitment announcements, requirements, and the registration link.</p>
+    <a class="btn main" href="https://www.instagram.com/kspm.upnvj/" style="color:inherit; border-radius:99px; display:inline-block; font-size:14px; font-weight:500; padding:12px 24px; text-decoration:none; transition:transform 0.15s, background 0.15s">Follow @kspm.upnvj</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT (replace the # links) ===== -->
+<section id="contact" class="contact" style="padding:72px 0">
+  <div class="wrap" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%" width="100%">
+    <p class="eyebrow" style="font-size:12px; letter-spacing:2px; margin:0 0 8px; text-transform:uppercase">Contact</p>
+    <h2 style="font-size:clamp(24px, 4vw, 34px); line-height:1.25; margin:0 0 12px">Get in touch</h2>
+    <p class="lead" style="margin:0 0 32px; max-width:640px">For partnerships, media, or questions, reach us through these channels.</p>
+    <a class="row" href="https://www.instagram.com/kspm.upnvj/" style="color:inherit; display:flex; font-size:15px; gap:12px; justify-content:space-between; padding:14px 0; text-decoration:none"><span>Instagram</span><span>@kspm.upnvj</span></a>
+    <a class="row" href="#" style="color:inherit; display:flex; font-size:15px; gap:12px; justify-content:space-between; padding:14px 0; text-decoration:none"><span>WhatsApp Community</span><span>Join the community</span></a>
+    <a class="row" href="mailto:your-email@example.com" style="color:inherit; display:flex; font-size:15px; gap:12px; justify-content:space-between; padding:14px 0; text-decoration:none"><span>Email</span><span>your-email@example.com</span></a>
+    <a class="row" href="#" style="color:inherit; display:flex; font-size:15px; gap:12px; justify-content:space-between; padding:14px 0; text-decoration:none"><span>Partnership proposal</span><span>Request our proposal</span></a>
+  </div>
+</section>
+
 </main>
+
+<footer style="font-size:13px; padding:28px 0; text-align:center" align="center">
+  <div class="wrap" style="margin:0 auto; max-width:1080px; padding:0 20px; width:100%" width="100%">© <span id="year">2026</span> Kelompok Studi Pasar Modal FEB UPN “Veteran” Jakarta</div>
+</footer>
+
+<script>
+/* Mobile menu */
+var burger=document.getElementById('burger'), menu=document.getElementById('menu');
+burger.addEventListener('click',function(){
+  var open=menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded',open);
+});
+menu.addEventListener('click',function(e){ if(e.target.tagName==='A'){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }});
+
+/* Footer year */
+document.getElementById('year').textContent=new Date().getFullYear();
+
+/* Scroll animation (content stays visible if this fails) */
+if('IntersectionObserver' in window){
+  document.documentElement.classList.add('js');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('show'); io.unobserve(en.target); }});
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+}
+</script>
 </body>
 </html>
